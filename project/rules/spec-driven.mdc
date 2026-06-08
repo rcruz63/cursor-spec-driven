@@ -1,0 +1,27 @@
+---
+description: Spec-driven development workflow — fases, rutas y restricciones
+alwaysApply: true
+---
+
+# Spec-Driven Development
+
+Este proyecto usa desarrollo guiado por especificaciones.
+
+## Rutas
+
+- Especificaciones: `docs/specs/{feature-slug}/`
+- Documentos: `requirements.md`, `design.md`, `tasks.md`, `workflow-state.json`
+
+## Restricciones
+
+1. No implementar código hasta que `tasks.md` esté aprobado por el usuario.
+2. No avanzar de fase (requirements → design → tasks → implement) sin aprobación explícita.
+3. Usar el skill `spec-driven-dev` para nuevas features.
+4. Actualizar `workflow-state.json` al completar cada fase o tarea.
+5. Marcar `pending_commit: "phase"` o `"task"` al terminar para que el hook commitee.
+
+## Comandos
+
+- `Inicia spec-driven: {descripción}`
+- `Aprobar requisitos` / `Aprobar diseño` / `Aprobar tareas`
+- `Implementar tarea {N}` / `Implementar pendientes`
