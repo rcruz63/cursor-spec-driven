@@ -41,7 +41,7 @@ Cada fase y cada tarea completada dispara un commit automático (hook `stop`).
 ### 1. Clonar en cada máquina (Mac trabajo, Mac personal, etc.)
 
 ```bash
-git clone https://github.com/TU_USUARIO/cursor-spec-driven.git ~/Developer/Cloud/cursor-spec-driven
+git clone https://github.com/rcruz63/cursor-spec-driven.git ~/Developer/Cloud/cursor-spec-driven
 cd ~/Developer/Cloud/cursor-spec-driven
 chmod +x scripts/*.sh project/hooks/*.sh
 ```
